@@ -1,8 +1,13 @@
 import Head from "next/head";
+import { useState } from "react";
 
 export default () => {
+  const [themeMode, setThemeMode] = useState<"dark" | "light">("dark");
+
   return (
-    <div className="container">
+    <div
+      className={`container theme-${themeMode} bg-background-primary text-font-primary`}
+    >
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,6 +17,12 @@ export default () => {
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <button
+          onClick={() => setThemeMode(themeMode === "dark" ? "light" : "dark")}
+        >
+          Toggle theme
+        </button>
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>

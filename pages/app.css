@@ -1,3 +1,13 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.theme-light {
+  --bg-background-primary: white;
+  --font-primary: black;
+}
+
+.theme-dark {
+  --bg-background-primary: black;
+  --font-primary: white;
+}
