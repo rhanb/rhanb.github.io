@@ -1,6 +1,6 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-export default function Home() {
+export default () => {
   return (
     <div className="container">
       <Head>
@@ -49,12 +49,17 @@ export default function Home() {
       </main>
 
       <footer>
+        <input
+          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+          type="email"
+          placeholder="jane@example.com"
+        />
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
@@ -205,5 +210,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
-}
+  );
+};
