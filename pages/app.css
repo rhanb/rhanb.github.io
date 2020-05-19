@@ -3,11 +3,30 @@
 @import "tailwindcss/utilities";
 
 .theme-light {
-  --bg-background-primary: white;
-  --font-primary: black;
+  --bg-background-primary: #E4F0FA;
+  --bg-background-secondary: #E4F0FA;
+  --font-primary: #334669;
+  --box-shadow-dark: rgba(255, 255, 255, 0.0155704);
+  --box-shadow-light: rgba(170, 187, 201, 0.795345);
+  --box-shadow-dark-pressed: rgba(255, 255, 255, 0.0155704);
+  --box-shadow-light-pressed: rgba(170, 187, 201, 0.795345);;
 }
 
 .theme-dark {
-  --bg-background-primary: black;
-  --font-primary: white;
+  --bg-background-primary: linear-gradient(0.14deg, #26282C 0.35%, #35373B 192.77%), linear-gradient(180deg, #424750 0%, #202326 100%);
+  --bg-background-secondary: linear-gradient(318.21deg, #2C3036 14.05%, #31343C 85.29%);
+  --font-primary: #FDFDFD;
+  --font-secondary: #7F8489;
+  --box-shadow-dark: #1F2427;
+  --box-shadow-light: #484E53;
+  --box-shadow-dark-pressed: rgba(17, 17, 18, 0.1);
+  --box-shadow-light-pressed: rgba(17, 17, 18, 0.1);
+}
+
+.rhanb-background-primary {
+    background: var(--bg-background-primary);
+}
+
+.rhanb-background-secondary {
+    background: var(--bg-background-secondary);
 }
